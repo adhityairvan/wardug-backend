@@ -1,0 +1,35 @@
+{
+  "name": "express-boiler",
+  "version": "1.0.0",
+  "description": "Boiler plate for express based project. adding babel and mongoose, and babel with nodemon for dev purpose",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js -r dotenv/config --exec babel-node --presets babel-preset-env",
+    "test": "mocha --recursive",
+    "build": "babel src —-out-dir dist"
+  },
+  "keywords": [
+    "express",
+    "boilerplate",
+    "nodemon",
+    "babel",
+    "mongoose",
+    "development",
+    "node"
+  ],
+  "author": "Destria",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}
